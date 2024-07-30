@@ -8,7 +8,7 @@ class WelcomePage extends GetView<WelcomeController> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Text('sjjsjsj'),
+      body: Text('hshssjsjsj'),
     );
   }
 }
