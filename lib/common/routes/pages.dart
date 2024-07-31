@@ -1,3 +1,4 @@
+import 'package:firebase_chat_app/pages/sign_in//index.dart';
 import 'package:firebase_chat_app/pages/welcome/index.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,13 +20,13 @@ class AppPages {
       //   RouteWelcomeMiddleware(priority: 1),
       // ],
     ),
-
-    /*
     GetPage(
       name: AppRoutes.SIGN_IN,
-      page: () => SignInPage(),
+      page: () => const SignInPage(),
       binding: SignInBinding(),
     ),
+
+    /*
 
     // check if needed to login or not
     GetPage(
