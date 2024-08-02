@@ -1,5 +1,7 @@
 import 'package:firebase_chat_app/common/middlewares/router_welcome.dart';
 import 'package:firebase_chat_app/pages/application/index.dart';
+import 'package:firebase_chat_app/pages/chat/index.dart';
+import 'package:firebase_chat_app/pages/contact/index.dart';
 import 'package:firebase_chat_app/pages/sign_in//index.dart';
 import 'package:firebase_chat_app/pages/welcome/index.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +11,7 @@ import 'routes.dart';
 
 class AppPages {
   static const INITIAL = AppRoutes.INITIAL;
-  static const APPlication = AppRoutes.Application;
+  static const Application = AppRoutes.Application;
   static final RouteObserver<Route> observer = RouteObservers();
   static List<String> history = [];
 
@@ -39,18 +41,21 @@ class AppPages {
       ],
     ),
 
+    GetPage(
+      name: AppRoutes.Contact,
+      page: () => const ContactPage(),
+      binding: ContactBinding(),
+    ),
+
+    GetPage(
+      name: AppRoutes.Chat,
+      page: () => const ChatPage(),
+      binding: ChatBinding(),
+    ),
+
     /*
-
-    // 最新路由
-    // 首页
-    GetPage(name: AppRoutes.Contact, page: () => ContactPage(), binding: ContactBinding()),
-    //消息
     GetPage(name: AppRoutes.Message, page: () => MessagePage(), binding: MessageBinding()),
-    //我的
     GetPage(name: AppRoutes.Me, page: () => MePage(), binding: MeBinding()),
-    //聊天详情
-    GetPage(name: AppRoutes.Chat, page: () => ChatPage(), binding: ChatBinding()),
-
     GetPage(name: AppRoutes.Photoimgview, page: () => PhotoImgViewPage(), binding: PhotoImgViewBinding()),*/
   ];
 }

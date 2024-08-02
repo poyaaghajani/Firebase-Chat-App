@@ -1,5 +1,6 @@
 import 'package:firebase_chat_app/common/values/colors.dart';
 import 'package:firebase_chat_app/pages/application/controller.dart';
+import 'package:firebase_chat_app/pages/contact/index.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,9 +17,7 @@ class ApplicationPage extends GetView<ApplicationController> {
           Container(
             child: Text('Chat'),
           ),
-          Container(
-            child: Text('Contact'),
-          ),
+          ContactPage(),
           Container(
             child: Text('Profile'),
           ),
