@@ -85,7 +85,9 @@ class SignInPage extends GetView<SignInController> {
                 title: 'Google Login',
                 width: 200.w,
                 height: 50.h,
-                onPressed: () {},
+                onPressed: () {
+                  controller.handleSignIn();
+                },
               ),
             ),
           ],
